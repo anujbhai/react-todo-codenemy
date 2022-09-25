@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/anujbhai.github.io/react-todo-codenemy/static/css/main.53618a60.css",
+    "main.js": "/anujbhai.github.io/react-todo-codenemy/static/js/main.3b3095b8.js",
+    "index.html": "/anujbhai.github.io/react-todo-codenemy/index.html",
+    "main.53618a60.css.map": "/anujbhai.github.io/react-todo-codenemy/static/css/main.53618a60.css.map",
+    "main.3b3095b8.js.map": "/anujbhai.github.io/react-todo-codenemy/static/js/main.3b3095b8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.53618a60.css",
+    "static/js/main.3b3095b8.js"
+  ]
+}
