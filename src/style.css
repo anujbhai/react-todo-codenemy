@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@200&family=Jura&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+input {
+  font-family: 'Jura', sans-serif;
+  font-weight: normal;
+  font-size: 1em;
+  text-transform: uppercase;
+  line-height: 1.5em;
+  letter-spacing: 0.08em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Exo', sans-serif;
+  font-weight: 600;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+hr {
+  opacity: 0.2;
+}
+
+input[type='text'] {
+  padding: 5px 12px;
+  text-transform: none !important;
+}
+input[type='text']:focus {
+  outline: 0;
+}
+input[type='checkbox'] {
+  margin: 10px;
+}
+input[type='submit'] {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: rgba(255, 255, 255, 1);
+  border-style: none;
+  border: 1px solid rgba(0, 0, 0, 1);
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in;
+  font-size: 0.75em;
+  letter-spacing: 2px;
+}
+input[type='submit']:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+input[type='submit']:disabled,
+input[type='submit'][disabled] {
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0) !important;
+  cursor: not-allowed;
+}
+input[type='text'],
+input[type='submit'] {
+  min-height: 30px;
+}
+
+button {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: rgba(255, 255, 255, 1);
+  border-style: none;
+  border: 1px solid rgba(0, 0, 0, 1);
+  border-radius: 3px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in;
+}
+button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.form-control {
+  display: flex;
+  margin-bottom: 30px;
+}
+.form-control input[type='text'] {
+  flex-grow: 1;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 3px 0 0 3px;
+}
+.form-control input[type='text']:focus {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.form-control input[type='submit'] {
+  padding-left: 24px;
+  padding-right: 24px;
+  border-radius: 0 3px 3px 0;
+}
+
+.main-todo-list {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.list-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list-item-completed {
+  text-decoration: line-through;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.notification {
+  padding: 20px;
+  margin: auto;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.075);
+  font-size: 0.75em;
+  letter-spacing: 2px;
+  position: fixed;
+  bottom: 30px;
+  left: 25%;
+  right: 25%;
+  max-height: 120px;
+  overflow-y: auto;
+}
+.notification.success {
+  background-color: rgba(241, 248, 233, 1);
+  border: 1px solid rgba(197, 225, 165, 1);
+  color: rgb(104, 159, 56);
+}
+.notification.info {
+  background-color: rgba(224, 247, 250, 1);
+  border: 1px solid rgba(128, 222, 234, 1);
+  color: rgb(0, 151, 167);
+}
+.notification.warning {
+  background-color: rgba(255, 253, 231);
+  border: 1px solid rgba(255, 245, 157, 1);
+  color: rgb(255, 179, 0);
+}
+.notification.danger {
+  background-color: rgba(255, 235, 238, 1);
+  border: 1px solid rgba(239, 154, 154, 1);
+  color: rgb(198, 40, 40);
+}
+
+@media screen and (max-width: 580px) {
+  .notification {
+    left: 5%;
+    right: 5%;
+  }
+
+  .main-todo-list {
+    max-height: 200px;
+  }
+}
