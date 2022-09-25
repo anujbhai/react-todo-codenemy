@@ -1,9 +1,11 @@
 {
   "name": "react",
   "version": "0.0.0",
+  "homepage": "https://github.com/anujbhai.github.io/react-todo-codenemy",
   "private": true,
   "dependencies": {
     "fbemitter": "^3.0.0",
+    "gh-pages": "^4.0.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "uuid": "^9.0.0"
@@ -12,7 +14,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
     "react-scripts": "latest"
